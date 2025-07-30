@@ -1,65 +1,67 @@
 [![Review Assignment Due Date](https://classroom.github.com/assets/deadline-readme-button-22041afd0340ce965d47ae6ef1cefeee28c7c493a6346c4f15d667ab976d596c.svg)](https://classroom.github.com/a/vov8w5Ad)
 
-**Objetivo del Ejercicio**
+# 🧩 Dungeon Exploration Game - Java OOP
 
-Desarrollar un juego de exploración de mazmorras en Java que utilice los cuatro pilares de la programación orientada a objetos: encapsulación, herencia, polimorfismo y abstracción. El juego debe incluir clases, interfaces y la interacción entre diferentes tipos de objetos en la mazmorra.
+## 🎯 Exercise Objective
 
+Develop a dungeon exploration game in Java that uses the **four pillars of object-oriented programming**: **encapsulation**, **inheritance**, **polymorphism**, and **abstraction**.  
+The game should include classes, interfaces, and interaction between different types of objects within the dungeon.
 
-**Descripción del Juego**
+---
 
-El jugador debe explorar una mazmorra compuesta de diferentes tipos de salas. Cada sala puede estar vacía, contener un tesoro o albergar un enemigo. El jugador debe navegar por estas salas, recoger objetos y enfrentarse a enemigos, todo mientras intenta mantenerse con vida.
+## 🕹️ Game Description
 
+The player must explore a dungeon composed of different types of rooms.  
+Each room can be empty, contain a treasure, or host an enemy.  
+The player must navigate through these rooms, collect objects, and face enemies, all while trying to stay alive.
 
-**Reglas del Juego**
+---
 
-1- El jugador comienza con un nombre y una cantidad inicial de puntos de vida.
+## 📜 Game Rules
 
-2- El jugador puede moverse a través de varias salas en la mazmorra.
+1. The player starts with a name and an initial amount of health points → `PlayerFeatures` ✅
+2. The player can move through multiple rooms in the dungeon → `Main`, using a `switch-case` inside a `while` loop ✅
+3. Rooms can be of three types: empty, with treasure, or with an enemy → `EmptyRoom`, `TreasureRoom`, and `EnemyRoom` ✅
+4. The player can collect treasures that are added to their inventory → `TreasureRoom` and `PlayerFeatures` ✅
+5. The player can take damage from enemies and lose health points → `EnemyRoom` and `PlayerFeatures` ✅
+6. The game ends when the player has explored all the rooms or has lost all their health points → `PlayerFeatures` and `Main` ✅
 
-3- Las salas pueden ser de tres tipos: vacía, con tesoro o con enemigo.
+---
 
-4- El jugador puede recoger tesoros que se añaden a su inventario.
+## 🛠️ Technical Requirements
 
-5- El jugador puede recibir daño de los enemigos y perder puntos de vida.
+1. **Interfaces and Abstraction**: Define interfaces for rooms and interactable objects in the game.
+2. **Encapsulation**: Use private attributes and public methods to handle the state of the player and the rooms.
+3. **Inheritance**: Create concrete classes that implement the defined interfaces to represent different types of rooms.
+4. **Polymorphism**: Use interface references to manage the different types of rooms and objects in the game.
 
-6- El juego termina cuando el jugador ha explorado todas las salas o ha perdido todos sus puntos de vida.
+---
 
+## 📋 Detailed Specifications
 
+### Step 1: Create the basic interfaces
+- Define a `Room` interface to represent a room in the dungeon.
+- Define a `GameObject` interface to represent interactable objects in the dungeon.
 
-**Requisitos Técnicos**
+### Step 2: Create the Player class
+- Define a `Player` class that encapsulates the player's data and behavior.
+- The class should include attributes such as `name`, `health`, and `inventory`.
+- Provide methods that allow the player to take damage, collect items, and display their current status.
 
-1- Interfaces y Abstracción: Define interfaces para las salas y los objetos interactuables en el juego.
+### Step 3: Create concrete Room classes
+- Create an `EmptyRoom` class to represent an empty room.
+- Create a `TreasureRoom` class to represent a room with a treasure.
+- Create an `EnemyRoom` class to represent a room with an enemy.
 
-2- Encapsulación: Utiliza atributos privados y métodos públicos para manejar el estado del jugador y de las salas.
+### Step 4: Create the main game class
+- Define a main class that initializes the player and a sequence of rooms.
+- Implement a loop that allows the player to move through the rooms.
+- Handle player interactions with rooms and objects.
 
-3- Herencia: Crea clases concretas que implementen las interfaces definidas para representar diferentes tipos de salas.
+---
 
-4- Polimorfismo: Usa referencias de las interfaces para manejar los diferentes tipos de salas y objetos en el juego.
+## 🧩 Additional Instructions
 
-
-
-**Especificaciones Detalladas**
-
-Paso 1: Crear las interfaces básicas
-  - Define una interfaz Room para representar una sala en la mazmorra.
-  - Define una interfaz GameObject para representar objetos interactuables en la mazmorra.
-
-Paso 2: Crear la clase Player
-  - Define una clase Player que encapsule los datos y comportamientos del jugador.
-  - La clase debe incluir atributos como name, health, e inventory.
-  - Proporciona métodos para que el jugador pueda recibir daño, recoger objetos y mostrar su estado actual.
-
-Paso 3: Crear clases concretas de Room
-  - Crea una clase EmptyRoom que represente una sala vacía.
-  - Crea una clase TreasureRoom que represente una sala con un tesoro.
-  - Crea una clase EnemyRoom que represente una sala con un enemigo.
-
-Paso 4: Crear la clase principal del juego
-  - Define una clase principal que inicialice el jugador y una serie de salas.
-  - Implementa un bucle que permita al jugador moverse por las salas.
-  - Maneja las interacciones del jugador con las salas y los objetos.
-
-**Instrucciones Adicionales**
-  - Asegúrate de manejar adecuadamente las interacciones entre el jugador y los diferentes tipos de salas.
-  - Considera agregar más salas y enemigos para hacer el juego más interesante.
-  - Puedes implementar características adicionales como la posibilidad de que el jugador use objetos del inventario.
+- Make sure to properly handle the interactions between the player and the different room types.
+- Consider adding more rooms and enemies to make the game more engaging.
+- You may implement additional features such as allowing the player to use items from the inventory.

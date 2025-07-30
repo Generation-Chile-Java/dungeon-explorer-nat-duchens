@@ -10,12 +10,12 @@ public class EnemyRoom implements Room, GameObject {
         this.damage = damage;
     }
 
-    public void enter(PlayerFeatures player) {
-        System.out.println("An enemy appears!");
+    public void enter(PlayerFeatures player) { // The player can find enemies
+        System.out.println("An enemy appears! \uD83E\uDE7B");
         interact(player);
     }
 
-    public void interact(PlayerFeatures player) {
+    public void interact(PlayerFeatures player) { // The player can receive damage
         player.takeDamage(damage);
     }
 }

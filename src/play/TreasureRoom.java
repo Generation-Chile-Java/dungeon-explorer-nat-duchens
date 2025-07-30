@@ -9,12 +9,12 @@ public class TreasureRoom implements Room, GameObject {
         this.treasure = treasure;
     }
 
-    public void enter(PlayerFeatures player) {
-        System.out.println("You found a treasure!");
+    public void enter(PlayerFeatures player) { // The player can find a treasure
+        System.out.println("You found a treasure! \uD83D\uDC8E");
         interact(player);
     }
 
-    public void interact(PlayerFeatures player) {
+    public void interact(PlayerFeatures player) { // And add the treasure into the inventory
         player.addToInventory(treasure);
     }
 }
