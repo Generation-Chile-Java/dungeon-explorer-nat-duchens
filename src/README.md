@@ -50,7 +50,7 @@ The player collects items, fights enemies, and must try to survive until all roo
 
 ## 🧱 Project Structure
 
-´´´
+```plaintext
 /src
 ├── main/
 │ ├── play/
@@ -65,4 +65,4 @@ The player collects items, fights enemies, and must try to survive until all roo
 │ └── items/
 │ ├── GameObject.java # Interface
 │ └── [additional items]
-´´´ 
+```
