@@ -1,29 +1,58 @@
-### IntelliJ IDEA ###
-out/
-!**/src/main/**/out/
-!**/src/test/**/out/
+###############################
+# 🔧 IntelliJ IDEA / JetBrains
+###############################
+.idea/
+*.iws
+*.iml
+*.ipr
+/shelf/
+workspace.xml
+/httpRequests/
+/mavenHomeManager.xml
+/dataSources/
+dataSources.local.xml
 
-### Eclipse ###
-.apt_generated
+####################
+# ⚙️ Eclipse
+####################
 .classpath
-.factorypath
 .project
-.settings
+.factorypath
+.apt_generated
+.settings/
 .springBeans
 .sts4-cache
 bin/
 !**/src/main/**/bin/
 !**/src/test/**/bin/
 
-### NetBeans ###
+####################
+# 🎯 NetBeans
+####################
 /nbproject/private/
 /nbbuild/
 /dist/
 /nbdist/
 /.nb-gradle/
 
-### VS Code ###
+####################
+# 💻 Visual Studio Code
+####################
 .vscode/
 
-### Mac OS ###
+####################
+# 🍏 macOS
+####################
 .DS_Store
+
+###############################
+# 🧪 Build output (general)
+###############################
+out/
+!**/src/main/**/out/
+!**/src/test/**/out/
+
+###############################
+# 🛠️ Visual Studio (Windows)
+###############################
+.vs/
